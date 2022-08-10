@@ -75,6 +75,7 @@ aside.sidebar-container,
   flex-direction: row;
   align-items: center;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .ds-top-search form input {
@@ -85,6 +86,20 @@ aside.sidebar-container,
 	color: #ccc;
 	font-size: 14px;
   height: 21px;
+}
+
+.ds-top-search form button {
+  background: none;
+  border: none;
+  float: right;
+  margin-left: -35px;
+  margin-right: 10px;
+  background-color: #091033;
+  border-radius: 0 30px 30px 0;
+  padding-right: 10px;
+  padding-left: 7px;
+  padding-top: 3px;
+  z-index: 999;
 }
 
 /* *****************************************************
