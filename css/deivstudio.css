@@ -1,5 +1,102 @@
+/* *****************************************************
+ * HIDING CONTENT
+ * ***************************************************** */
 
-/* HIDDING THE TOP STICKY BAR THAT APPEARS WHEN SCROLLING */
-header.centered-top-container.sticky {
+header.centered-top-container.sticky,
+.collapsed-header .centered-top-placeholder,
+.centered-top-container,
+.post-header {
   display: none;
+} 
+
+/* *****************************************************
+ * BACKGROUND
+ * ***************************************************** */
+.bg-photo-overlay, 
+.page {
+  background-color: #dbdde3;
+}
+
+/* *****************************************************
+ * SIDEBAR
+ * ***************************************************** */
+aside.sidebar-container,
+.sidebar-container .sidebar_bottom,
+.sidebar-container .sidebar_top_wrapper,
+.sidebar-container .navigation {
+  background-color: #36374a;
+}
+
+.sidebar-container .widget .title,
+.widget.Profile dd,
+.widget.Profile .profile-link {
+  color: #a8b1c8;
+}
+
+/* *****************************************************
+ * TOP BAR
+ * ***************************************************** */
+.ds-top-header {
+	background-color: #433254;
+	height: 35px;
+	position: relative;
+	z-index: 999;
+	display: flex;
+	flex-direction: row;
+}
+
+.ds-top-logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #7a3b7f;
+	width: 284px;
+	font-weight: 700;
+	color: #FFF;
+	box-sizing: border-box;
+	padding-left: 14px;
+}
+
+.ds-top-logo a {
+	color: inherit;
+}
+
+.ds-top-space {
+	flex-grow: 1;
+}
+
+.ds-top-search {
+	display: flex;
+	flex-direction: row;
+}
+
+.ds-top-search form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.ds-top-search form input {
+	padding: 2px 1em;
+	border: none;
+	border-radius: 30px;
+	background-color: #091033;
+	color: #ccc;
+	font-size: 14px;
+  height: 21px;
+}
+
+/* *****************************************************
+ * CONTENT
+ * ***************************************************** */
+
+/* POST TITLE */
+.post-title {
+  float: inherit;
+}
+
+/* MAIN CONTAINER */
+.page_body .centered {
+  max-width: 740px;
 }
