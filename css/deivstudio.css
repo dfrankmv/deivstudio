@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Zen+Maru+Gothic:wght@400;700;900&display=swap');
+
 /* *****************************************************
  * HIDING CONTENT
  * ***************************************************** */
@@ -5,7 +7,8 @@
 header.centered-top-container.sticky,
 .collapsed-header .centered-top-placeholder,
 .centered-top-container,
-.post-header {
+.post-header,
+.post-share-buttons.post-share-buttons-top {
   display: none;
 } 
 
@@ -114,4 +117,14 @@ aside.sidebar-container,
 /* MAIN CONTAINER */
 .page_body .centered {
   max-width: 740px;
+}
+
+.post-body {
+  font-family: "Zen Maru Gothic", "PT Sans", "Roboto";
+  color: #424242;
+}
+
+.post-body code {
+  color: #b22222;
+  font-family: 'Inconsolata';
 }
