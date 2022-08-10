@@ -126,14 +126,24 @@ aside.sidebar-container,
 .post-body {
   font-family: "Zen Maru Gothic", "PT Sans", "Roboto";
   color: #424242;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 
 
 /* CODE */
 .post-body :not(pre) code {
-  color: #b22222;
+  color: #b75501;
   font-family: 'Roboto Mono';
-  font-size: .9em;
+  font-size: .8em;
+}
+
+.post-body :not(pre) code.rule {
+  background-color: #f6f6f6;
+  padding: 1px 4px;
+  border-radius: 3px;
+  color: #54790d;
+  font-size: .8em;
 }
 
 .post-body pre code {
@@ -155,16 +165,23 @@ pre code.hljs {
   display: block;
   margin: 1em auto;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  
+}
+
+.post-body ul {
+  padding-left: 1em;
+  list-style-type:symbols("-");
 }
 
 .info,
 .information,
 .important {
   margin: 1em 0;
-  padding: .5em 1em .8em 1em;
+  padding: .5em 1em 1em 1em;
   font-size: .9em;
+}
+
+.post-body .important code.rule {
+  background-color: #fff8e8;
 }
 
 .info > p:first-child,
@@ -206,3 +223,4 @@ pre code.hljs {
 .important::before {
   content: "Important";
 }
+
