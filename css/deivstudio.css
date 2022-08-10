@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Zen+Maru+Gothic:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Zen+Maru+Gothic:wght@400;700;900&display=swap');
 
 /* *****************************************************
  * HIDING CONTENT
@@ -109,6 +109,10 @@ aside.sidebar-container,
  * CONTENT
  * ***************************************************** */
 
+.main {
+  box-shadow: 0 0 10px;
+}
+
 /* POST TITLE */
 .post-title {
   float: inherit;
@@ -124,7 +128,81 @@ aside.sidebar-container,
   color: #424242;
 }
 
-.post-body code {
+
+/* CODE */
+.post-body :not(pre) code {
   color: #b22222;
-  font-family: 'Inconsolata';
+  font-family: 'Roboto Mono';
+  font-size: .9em;
+}
+
+.post-body pre code {
+  font-size: .8em;
+  line-height: 1.5;
+  font-family: 'Roboto Mono';
+}
+
+pre code.hljs {
+  padding: 1em 0 !important;
+}
+
+.post-body pre {
+  padding: 0 1em;
+  background-color: #f6f6f6;
+}
+
+.post-body img {
+  display: block;
+  margin: 1em auto;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  
+}
+
+.info,
+.information,
+.important {
+  margin: 1em 0;
+  padding: .5em 1em .8em 1em;
+  font-size: .9em;
+}
+
+.info > p:first-child,
+.information > p:first-child,
+.important > p:first-child {
+  margin-top: 0;
+}
+
+.info > *:last-child,
+.information > *:last-child,
+.important > *:last-child {
+  margin-bottom: 0;
+}
+
+.info::before,
+.information::before,
+.important::before {
+  font-weight: bold;
+  display: block;
+}
+
+.info,
+.information {
+  background-color: #deeaf6;
+  color: #1f4e79;
+}
+
+.info::before,
+.information::before {
+  content: "Information";
+}
+
+.important {
+  background-color: #ffcd5f;
+  color: black;
+  margin: 1em 0;
+}
+
+.important::before {
+  content: "Important";
 }
