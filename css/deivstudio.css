@@ -130,7 +130,6 @@ aside.sidebar-container,
   margin-bottom: 0;
 }
 
-
 /* CODE */
 .post-body :not(pre) code {
   color: #b75501;
@@ -162,19 +161,33 @@ pre code.hljs {
   background-color: #f6f6f6;
 }
 
+/* ******** */
+/* IMAGES   */
+/* ******** */
 .post-body img {
   display: block;
   margin: 1em auto;
   box-sizing: border-box;
 }
 
+/* ******** */
+/* LISTS    */
+/* ******** */
 .post-body ul {
   padding-left: 1em;
   list-style-type:symbols("-");
 }
 
+.post-body ol {
+  padding-left: 1em;
+}
+
+/* ******** */
+/* CALLOUTS */
+/* ******** */
 .info,
 .information,
+.note,
 .important {
   margin: 1em 0;
   padding: .5em 1em 1em 1em;
@@ -187,25 +200,29 @@ pre code.hljs {
 
 .info > p:first-child,
 .information > p:first-child,
+.note > p:first-child,
 .important > p:first-child {
   margin-top: 0;
 }
 
 .info > *:last-child,
 .information > *:last-child,
+.note > *:last-child,
 .important > *:last-child {
   margin-bottom: 0;
 }
 
 .info::before,
 .information::before,
+.note::before,
 .important::before {
   font-weight: bold;
   display: block;
 }
 
 .info,
-.information {
+.information,
+.note {
   background-color: #deeaf6;
   color: #1f4e79;
 }
@@ -213,6 +230,10 @@ pre code.hljs {
 .info::before,
 .information::before {
   content: "Information";
+}
+
+.note::before {
+  content: "Note";
 }
 
 .important {
@@ -225,7 +246,9 @@ pre code.hljs {
   content: "Important";
 }
 
+/* ******** */
 /* TIMELINE */
+/* ******** */
 ul.timeline {
 	list-style: none;
 	padding-left: 0;
